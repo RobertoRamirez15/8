@@ -7,7 +7,7 @@ document.addEventListener("deviceready", Dispositivo_Listo, false);
 
 // cuando esta listo el dispositivo
 function Dispositivo_listo() {
-comienza();
+Comienza();
 }
 
  // Empieza la 'observacion' de la aceleracion
@@ -17,7 +17,7 @@ function Comienza() {
 //
 var opciones = { frequency: 2000 };
 
-watchID = navigator.acelerometer.watchAceleration(correcto, Error, opciones);
+watchID = navigator.accelerometer.watchAcceleration(Correcto, Error, opciones);
 navigator.geolocation.getCurrentPosition(Localiza, ErrorLocalizacion);
 }
 // detiene la 'observacion' de la aceleracion
@@ -47,14 +47,14 @@ function Error() {
 function Localiza(posicion) {
 	var element = document.getElementById('geolocalizacion');
 	element.innerHTML = 'Latitud:' +posicion.coords.latitude   +'<br />' +
-		'Longitud: '            +posicion.coords.longitude   +'<br />' +
-		'Altitud: '            +posicion.coords.altitude   +'<br />' +
-		'Precision: '            +posicion.coords.accuracy   +'<br />' +
-		'Precision de Altitud: '            +posicion.coords.altitudeAccuracy   +'<br />' +
-		'Dirreccion: '            +posicion.coords.heading   +'<br />' +
-		'Velocidad: '            +posicion.coords.speed   +'<br />' +
-		'Intervalo: '            +posicion.timestamp   +'<br />';
-}
+		'Longitud: '               +posicion.coords.longitude   +'<br />' +
+		'Altitud: '                +posicion.coords.altitude   +'<br />' +
+		'Precision: '              +posicion.coords.accuracy   +'<br />' +
+		'Precision de Altitud: '   +posicion.coords.altitudeAccuracy   +'<br />' +
+		'Direccion: '             +posicion.coords.heading   +'<br />' +
+		'Velocidad: '              +posicion.coords.speed   +'<br />' +
+		'Intervalo: '              +posicion.timestamp   +'<br />';
+} 
 //Error en la geolocalizacion
 function ErroLocalizacion(error) {
 	alert('codigo:' +error.code +'\n' +
