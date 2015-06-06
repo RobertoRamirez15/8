@@ -20,7 +20,7 @@
     </author>
 	
 <gap:plugin name="org.apache.cordova.device" version="0.2.12" />
-		<gap:plugin name="org.apache.cordova.vibration" version="0.3.0" />
+<gap:plugin name="org.apache.cordova.vibration" version="0.3.0" />
 <gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
 <!-- COLOCAR ESTOS DOS PLUGINS -->
 <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
