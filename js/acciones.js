@@ -6,7 +6,7 @@ var watchID = null;
 document.addEventListener("deviceready", Dispositivo_Listo, false);
 
 // cuando esta listo el dispositivo
-function Dispositivo_listo() {
+function Dispositivo_Listo() {
 Comienza();
 }
 
@@ -46,18 +46,18 @@ function Error() {
 //Exito al localizar
 function Localiza(posicion) {
 	var element = document.getElementById('geolocalizacion');
-	element.innerHTML = 'Latitud:' +posicion.coords.latitude   +'<br />' +
-		'Longitud: '               +posicion.coords.longitude   +'<br />' +
-		'Altitud: '                +posicion.coords.altitude   +'<br />' +
-		'Precision: '              +posicion.coords.accuracy   +'<br />' +
-		'Precision de Altitud: '   +posicion.coords.altitudeAccuracy   +'<br />' +
-		'Direccion: '             +posicion.coords.heading   +'<br />' +
-		'Velocidad: '              +posicion.coords.speed   +'<br />' +
-		'Intervalo: '              +posicion.timestamp   +'<br />';
+	element.innerHTML = 'Latitud: ' + posicion.coords.latitude   +'<br />' +
+		'Longitud: '               + posicion.coords.longitude   +'<br />' +
+		'Altitud: '                + posicion.coords.altitude   +'<br />' +
+		'Precision: '              + posicion.coords.accuracy   +'<br />' +
+		'Precision de Altitud: '   + posicion.coords.altitudeAccuracy   +'<br />' +
+		'Direccion: '             + posicion.coords.heading   +'<br />' +
+		'Velocidad: '              + posicion.coords.speed   +'<br />' +
+		'Intervalo: '              + posicion.timestamp   +'<br />';
 } 
 //Error en la geolocalizacion
 function ErroLocalizacion(error) {
-	alert('codigo:' +error.code +'\n' +
+	alert('codigo:' +error.code +'\n'+
 	'mensaje:' +error.message+'\n');
 }
 });//document ready
