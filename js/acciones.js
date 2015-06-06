@@ -56,7 +56,7 @@ function Localiza(posicion) {
 		'Intervalo: '              + posicion.timestamp   +'<br />';
 } 
 //Error en la geolocalizacion
-function ErroLocalizacion(error) {
+function ErrorLocalizacion(error) {
 	alert('codigo:' +error.code +'\n'+
 	'mensaje:' +error.message+'\n');
 }
