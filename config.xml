@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-       <widget xmlns   = "http://www.w3.org/ns/widgets"
+        <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.phonegap.example8"
         versionCode = "10" 
@@ -7,10 +7,10 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>ACELEROMETRO Y GEOLOCALIZACION</name>
+    <name>Acelerometro y Geolocalizacion</name>
 
     <description>
-      Aplicacion que muestra los datosdel acelerometro y Geolocalizacion
+        Aplicacion que muestra los datos del acelerometro y Geolocalizacion
     </description>
 
     <preference name="phonegap-version" value="3.1.0" />
@@ -19,11 +19,11 @@
        ROBERTO RAMIREZ BALEON
     </author>
 	
-<gap:plugin name="org.apache.cordova.device" version="0.2.12" />
-<gap:plugin name="org.apache.cordova.vibration" version="0.3.0" />
-<gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
-<!-- COLOCAR ESTOS DOS PLUGINS -->
-<gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
-<gap:plugin name="org.apache.cordova.device-motion" version="0.2.10" />
-
+	
+	    <gap:plugin name="org.apache.cordova.device" version="0.2.12" />
+        <gap:plugin name="org.apache.cordova.vibration" version="0.3.0" />
+        <gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
+		
+        <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
+        <gap:plugin name="org.apache.cordova.device-motion" version="0.2.10" />
 </widget>
